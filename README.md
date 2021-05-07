@@ -7,6 +7,7 @@
 
 [![AppVeyor build
 status](https://ci.appveyor.com/api/projects/status/github/kkbrum/PSMOptimalCalipers?branch=master&svg=true)](https://ci.appveyor.com/project/kkbrum/PSMOptimalCalipers)
+[![R-CMD-check](https://github.com/kkbrum/PSMOptimalCalipers/workflows/R-CMD-check/badge.svg)](https://github.com/kkbrum/PSMOptimalCalipers/actions)
 <!-- badges: end -->
 
 The goal of PSMOptimalCalipers is to reproduce and extend figure 2 of

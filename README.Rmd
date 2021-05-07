@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
   [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/kkbrum/PSMOptimalCalipers?branch=master&svg=true)](https://ci.appveyor.com/project/kkbrum/PSMOptimalCalipers)
+[![R-CMD-check](https://github.com/kkbrum/PSMOptimalCalipers/workflows/R-CMD-check/badge.svg)](https://github.com/kkbrum/PSMOptimalCalipers/actions)
 <!-- badges: end -->
 
 The goal of PSMOptimalCalipers is to reproduce and extend figure 2 of the 2011 paper by Peter C. Austin "Optimal caliper widths for propensity-score matching when estimating differences in means and differences in proportions in observational studies".
