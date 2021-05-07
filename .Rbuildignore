@@ -1,2 +1,4 @@
 ^finalProject\.Rproj$
 ^\.Rproj\.user$
+^appveyor\.yml$
+^README\.Rmd$
