@@ -1,0 +1,50 @@
+#' Results of simulation replicating Austin 2011 paper figure 2
+#' 
+#' A dataset containing simulation results to analyze the
+#' risk differences obtained using different caliper widths
+#' in propensity score matching, with a treated proportion
+#' of 0.25.
+#' 
+#' @format A list with 5 elements, where each element contains the 
+#' results for simulations based on a different covariate distribution:
+#' \describe{
+#'     \item{Ind Norm}{All 10 covariates generated are independent
+#'     standard normals}
+#'     \item{Corr Norm}{10 covariates generated are standard normals
+#'     with pairwise correlation 0.25}
+#'     \item{5 Bern}{5 covariates are independent Bernouillis with
+#'     success probability 0.5 and the other 5 covariates are
+#'     independent standard normals}
+#'     \item{9 Bern}{9 covariates are independent Bernouillis with
+#'     success probability 0.5 and the other covariate is a 
+#'     standard normal}
+#'     \item{10 Bern}{All 10 covariates generated are independent
+#'     Bernouillis with success probability 0.5}
+#'     }
+#' Each of these elements is a list with one component, containing
+#' the simulation results for a true risk difference of -0.05:
+#' \describe{
+#'    \item{RD -0.05}{A matrix with 25 columns where each column
+#'    is for a new caliper width and 7 rows:
+#'    \describe{
+#'        \item{gamma}{The caliper width in terms of number of 
+#'        standard deviations of the logit propensity score}
+#'        \item{MSE}{Mean squared error of the calculated risk
+#'        differences across 500 data sets}
+#'        \item{bias_reduction}{The percentage the propensity
+#'        score estimate reduced bias over the crude full data
+#'        estimate}
+#'        \item{mean_crude}{The crude average risk difference
+#'        estimated across the 500 data sets}
+#'        \item{mean_ps}{The average risk difference estimated
+#'        across the 500 data sets comparing the matched groups}
+#'        \item{time_mean}{The average time to generate data,
+#'        conduct matching, and calculate risk difference for
+#'        one data set}
+#'        \item{time_var}{The variance across the 500 data sets
+#'        of the time to generate data, conduct matching, and 
+#'        calculate risk difference for one data set}
+#'        }
+#'    }
+#'}
+"replication_results"

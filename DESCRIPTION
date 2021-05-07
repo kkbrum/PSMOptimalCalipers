@@ -1,7 +1,7 @@
 Package: PSMOptimalCalipers
 Type: Package
 Title: Reproduces and Extends Simulations on Optimal Caliper Width in Propensity-Score Matching
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
     person(given = "Katherine",
            family = "Brumberg",
@@ -14,6 +14,7 @@ Description: This package reproduces and extends figure 2 from the 2011 paper
     propensity-score caliper widths from 0.05 to 2.5. The simulations all have 25 percent
     treated patients and 75 percent control patients. We will extend these simulations by
     varying the percentage of treated patients.
+Depends: R (>= 3.5.0)
 License: GPL (>= 2)
 Encoding: UTF-8
 LazyData: true
