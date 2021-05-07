@@ -69,7 +69,7 @@ runSimulations <- function(seed, cores, cov_dists, true_risk_diffs, gammas, N,
   # Create cluster for parallelization
   cl <- parallel::makeCluster(cores)
   parallel::clusterSetRNGStream(cl, iseed = seed)
-  clusterEvalQ(cl, library(PSMOptimalCalipers))
+  parallel::clusterEvalQ(cl, library(PSMOptimalCalipers))
 
   # Create a list of lists to store the results in
   results <- vector("list", length(cov_dists))
