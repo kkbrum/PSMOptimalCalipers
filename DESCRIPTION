@@ -7,7 +7,7 @@ Authors@R:
            family = "Brumberg",
            role = c("aut", "cre"),
            email = "kbrum@wharton.upenn.edu")
-Description: This package reproduces and extends figure 2 from the 2011 paper 
+Description: Reproduces and extends figure 2 from the 2011 paper 
     paper 'Optimal caliper widths for propensity-score matching when estimating differences 
     in means and differences in proportions in observational studies' by Peter C. Austin. 
     Figure 2 examines the MSE of the predicted risk differences when using 50 different

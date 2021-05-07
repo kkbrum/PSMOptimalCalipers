@@ -22,6 +22,11 @@
 #' full data, the average estimate from the matched data, the average time to go through
 #' one data set, and the variance of the times to go through one data set.
 #'
+#' @examples
+#' runSimulations(seed = 64, cores = 1, cov_dists = c("Ind Norm"),
+#'   true_risk_diffs = c(-0.05), gammas = c(1), N = 1, p_treat = 0.25,
+#'   base_risk = 0.29, file = NULL)
+#'
 #' @export
 
 runSimulations <- function(seed, cores, cov_dists, true_risk_diffs, gammas, N,

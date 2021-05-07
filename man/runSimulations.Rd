@@ -49,3 +49,9 @@ This function runs simulations for a combination of covariate distributions,
 risk differences and caliper widths and a given treatment proportion and base outcome risk.
 The function can be parallelized with multiple cores, and reproduced with a seed value.
 }
+\examples{
+runSimulations(seed = 64, cores = 1, cov_dists = c("Ind Norm"),
+  true_risk_diffs = c(-0.05), gammas = c(1), N = 1, p_treat = 0.25,
+  base_risk = 0.29, file = NULL)
+
+}
